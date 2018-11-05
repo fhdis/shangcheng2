@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ruilelin.com.shifenlife">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="ruilelin.com.shifenlife.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a32f2f2fffb9285287871473e0237cae"></meta-data>
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home.storedetaillist.ProductActivity" />
+        <activity android:name=".activity.AboutUs" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.UserProfile" />
+        <activity android:name=".activity.Recharge" />
+        <activity android:name=".activity.RechargeRecord" />
+        <activity android:name=".activity.GaodeActivity" />
+        <activity android:name=".activity.AddOrEditPlaceActivity" />
+        <activity android:name=".activity.PersonPlaceActivity" />
+        <activity android:name=".activity.GoodsInfoPage" />
+        <activity android:name=".activity.SubmitOrderSuccessActivity" />
+        <activity android:name=".activity.RecommendActivity" />
+        <activity
+            android:name=".activity.InfoActivity"
+            android:exported="true" />
+        <activity android:name=".activity.BalanceDetails" />
+        <activity android:name=".activity.NetWorkErrorActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginWithTelCode" />
+        <activity android:name=".activity.ChangedPassword" />
+        <activity android:name=".activity.CreateOrderActivity" />
+        <activity android:name=".activity.PayActivity" />
+        <activity android:name=".activity.PersonOrderActivity" />
+        <activity android:name=".activity.NearByShopActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".map.poi.InputTipsActivity" />
+        <activity android:name=".activity.ConfirmAddress" />
+
+        <service android:name="com.amap.api.location.APSService"></service>
+        <service android:name=".service.LocationService"></service>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!--微信登录配置 start-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/wx_login_style" />
+    </application>
+
+</manifest>

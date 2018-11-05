@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date">
+        <item>年</item>
+        <item>月</item>
+        <item>日</item>
+    </string-array>
+	
+	 <string-array name="order_status">
+        <item>全部</item>
+        <item>待付款</item>
+         <item>进行中</item>
+        <item>已完成</item>
+        <item>已取消</item>
+    </string-array>
+
+</resources>

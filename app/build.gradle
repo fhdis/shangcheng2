@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "ruilelin.com.shifenlife"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.github.pinguo-zhouwei:MZBannerView:v2.0.2'
+    implementation project(':lib-recyclerviewhelper')
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.alibaba:fastjson:1.2.21'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'se.emilsjolander:stickylistheaders:2.7.0'
+    implementation 'com.sxwz.qcodelib:qcodelib:1.0.1'
+    //implementation files('libs/gson-2.2.4.jar')
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.tsy:myokhttp:1.1.4'
+    implementation 'q.rorbin:badgeview:1.1.3'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation files('libs/alipaySdk-20180601.jar')
+    implementation files('libs/universalimageloader.jar')
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:search:latest.integration'
+    implementation 'com.amap.api:3dmap:latest.integration'
+    //implementation group: 'com.amap.api', name: 'search', version: '6.1.0'
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:3dmap:latest.integration'
+    implementation 'com.facebook.fresco:fresco:0.9.0'
+    implementation files('libs/picasso-2.5.2.jar')
+    implementation 'com.gxz.pagerslidingtabstrip:library:1.3'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'cn.alien95:util:1.1.3'
+    implementation project(':RefreshRecyclerView')
+    implementation 'com.zhihu.android:matisse:0.4.3'
+    implementation project(':library')
+    implementation project(':swipeToLoadLayout')
+    implementation 'com.zhy:okhttputils:2.6.2'
+
+}

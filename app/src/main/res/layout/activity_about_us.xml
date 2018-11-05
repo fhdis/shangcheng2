@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/aboutus_background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@mipmap/exit"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/icon_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/sfsh_logo" />
+
+    <TextView
+        android:id="@+id/banben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="食纷生活2.1"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banben"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:text="我们可以满足您所有的需求，随时随地\n想看就看,即买即送，来了您就别想走\n了。\n食纷生活，贴心为您定制全套服务的好\n伙伴。\n\n\n如果您付款或消费遇到问题，请联系客\n服小七:\n电话：58777606或58777602\n微信：HUAQIANG900503\n\n\n商务合作\n如果您希望与食纷生活有任何合作，请\n联系：\n邮箱：YUFENGSHENGKEJI @163.com"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/copyrights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp_12"
+        android:text="食纷生活 版权所有\nCopyright @2011-2018 Shifenshenghuo.\nAll Rights Reserved"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

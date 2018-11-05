@@ -1,0 +1,257 @@
+{
+  "categoryOneArray": [
+    {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_chufangyao.png",
+          "cacode": "chufangyao"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_feichufang.png",
+          "cacode": "feichufang"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "cacode": "kangshengsu"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "cacode": "kangshengsu"
+        }
+      ],
+      "name": "搜索",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_0.png",
+      "cacode": "tongsufenlei"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_chufangyao.png",
+          "cacode": "chufangyao"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_feichufang.png",
+          "cacode": "feichufang"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "cacode": "kangshengsu"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "cacode": "kangshengsu"
+        }
+      ],
+      "name": "新鲜水果",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_0.png",
+      "cacode": "tongsufenlei"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20155.png",
+          "cacode": "20155"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "cacode": "20154"
+        }
+      ],
+      "name": "田园时蔬",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_1.png",
+      "cacode": "20"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18135.png",
+          "cacode": "18135"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18149.png",
+          "cacode": "18149"
+        },
+       
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18143.png",
+          "cacode": "18143"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18148.png",
+          "cacode": "18148"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18152.png",
+          "cacode": "18152"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18131.png",
+          "cacode": "18131"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18133.png",
+          "cacode": "18133"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18141.png",
+          "cacode": "18141"
+        },
+      
+        {
+          "name": "禽蛋肉类",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "cacode": "18144"
+        }
+
+
+      ],
+      "name": "禽蛋肉类",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_2.png",
+      "cacode": "18"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19138.png",
+          "cacode": "19138"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "cacode": "19149"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19136.png",
+          "cacode": "19136"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19147.png",
+          "cacode": "19147"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19151.png",
+          "cacode": "19151"
+        },
+        {
+          "name": "风湿骨伤用药",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19132.png",
+          "cacode": "19132"
+        },
+        {
+          "name": "血液系统用药",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19150.png",
+          "cacode": "19150"
+        }
+
+      ],
+      "name": "水产海鲜",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_3.png",
+      "cacode": "19"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "普通食品",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "cacode": "13116"
+        }
+      ],
+      "name": "净菜熟食",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_4.png",
+      "cacode": "13"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10101.png",
+          "cacode": "10101"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10109.png",
+          "cacode": "10109"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10102.png",
+          "cacode": "10102"
+        },
+        {
+		  "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_test3.png",
+          "cacode": "test3"
+        }
+      ],
+      "name": "豆蜡加工",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_5.png",
+      "cacode": "10"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_17_17125.png",
+          "cacode": "17125"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_17_17127.png",
+          "cacode": "17127"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_17_17126.png",
+          "cacode": "17126"
+        }
+      ],
+      "name": "粮油副食",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_6.png",
+      "cacode": "17"
+    },
+	 {
+      "categoryTwoArray": [
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_17_17125.png",
+          "cacode": "17125"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_17_17127.png",
+          "cacode": "17127"
+        },
+        {
+          "name": "红富士苹果",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_17_17126.png",
+          "cacode": "17126"
+        }
+      ],
+      "name": "调味百货",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_6.png",
+      "cacode": "17"
+    }
+  ]
+}

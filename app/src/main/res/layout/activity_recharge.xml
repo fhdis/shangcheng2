@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigationbar_yellow" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/recharge" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <RadioButton
+            android:id="@+id/rb_online"
+            style="@style/MainButtonStyle"
+            android:background="@drawable/radio_check"
+            android:gravity="center"
+            android:text="在线充值"
+            android:textColor="@drawable/radio_text_check"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:id="@+id/rb_welfare_card"
+            style="@style/MainButtonStyle"
+            android:background="@drawable/radio_check"
+            android:gravity="center"
+            android:text="福利卡充值"
+            android:textColor="@drawable/radio_text_check"
+            android:textSize="@dimen/sp_14" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_title_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/arrow_left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- 商品、详情、评价切换的控件 -->
+                <com.gxz.PagerSlidingTabStrip
+                    android:id="@+id/psts_tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp"
+                    app:pstsDividerColor="@android:color/transparent"
+                    app:pstsDividerPaddingTopBottom="0dp"
+                    app:pstsIndicatorColor="#ffffff"
+                    app:pstsIndicatorHeight="2dp"
+                    app:pstsScaleZoomMax="0.0"
+                    app:pstsShouldExpand="false"
+                    app:pstsSmoothScrollWhenClickTab="false"
+                    app:pstsTabPaddingLeftRight="12dp"
+                    app:pstsTextAllCaps="false"
+                    app:pstsTextSelectedColor="@color/text_black"
+                    app:pstsUnderlineHeight="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="图文详情"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/bt_share"
+                android:layout_margin="5dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@mipmap/share_gray" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ruilelin.com.shifenlife.goodsinfopage.widget.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_guige"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="当季超甜橙子 规格500克"
+            android:maxLines="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_price"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5.77元"
+                android:textColor="@color/text_red"
+                android:maxLines="1" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_origin_price"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5.77元"
+                    android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_add_cart"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="加入购物车"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/yuanjiao_shape"
+            />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/bt_buy_now"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="立即购买"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/yuanjiao_shape"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

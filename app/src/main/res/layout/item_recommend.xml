@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="120dp"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+   >
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:id="@+id/iv_figure"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:background="@mipmap/icon_recommend"/>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/recommend_shape">
+        <TextView
+            android:id="@+id/tv_cover_price"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="￥102.00"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_below="@id/tv_cover_price"
+            android:background="@drawable/recommend_shape"
+            android:id="@+id/tv_origin_price"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal"
+            android:text="￥159.00"
+            android:textColor="#ff4c4c"/>
+        <TextView
+            android:layout_below="@id/tv_cover_price"
+            android:background="@drawable/recommend_shape"
+            android:layout_toRightOf="@id/tv_origin_price"
+            android:id="@+id/tv_origin_price_new"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal"
+            android:text="￥159.00"
+         />
+    </RelativeLayout>
+</LinearLayout>

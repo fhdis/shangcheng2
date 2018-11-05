@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/net_error" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="您的网络不够给力，请稍后再试"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/bt_tel"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/yuanjiao_shape"
+        android:text="刷新"
+        android:textSize="20dp" />
+
+</LinearLayout>

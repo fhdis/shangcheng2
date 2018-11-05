@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/iv_edit"
+        android:layout_toStartOf="@+id/iv_edit"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:clickable="false"
+                android:maxLines="1"
+                android:textColor="@color/item_person_address"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                tools:text="姓名" />
+
+            <TextView
+                android:id="@+id/tv_user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:clickable="false"
+                android:maxLines="1"
+                android:textColor="@color/item_person_address"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                tools:text="先生" />
+
+            <TextView
+                android:id="@+id/tv_user_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:clickable="false"
+                android:maxLines="1"
+                android:textColor="@color/item_person_address"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                tools:text="14526781197" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_user_place_default"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="2dp"
+                android:clickable="false"
+                android:gravity="left"
+                android:maxLines="2"
+                android:padding="2dp"
+                android:text="[默认地址]"
+                android:textColor="@color/default_address_red"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="2dp"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:maxLines="2"
+                android:padding="2dp"
+                android:text="@string/string_concrete_place"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="20dp"
+        android:layout_height="@dimen/dimen_toolbar_btn_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@null"
+        android:gravity="end"
+        android:padding="4dp"
+        android:src="@mipmap/ic_edit" />
+
+</RelativeLayout>

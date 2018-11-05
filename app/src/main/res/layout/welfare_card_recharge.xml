@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/item_balance" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yuanjiao_money_shape"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="卡号"
+            android:textColor="#FACF1C" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <EditText
+            android:id="@+id/edit_cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="请输入卡号"
+            android:padding="5dp"
+            android:textColor="#555" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yuanjiao_money_shape"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="激活码"
+            android:textColor="#FACF1C" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="请输入激活码"
+            android:padding="5dp"
+            android:textColor="#555" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/yuanjiao_shape"
+        android:text="@string/string_confirm_pay"
+        android:textColor="@color/white" />
+</LinearLayout>

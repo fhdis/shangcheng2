@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/search_bar"
+        layout="@layout/shop_search_bar"/>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/white_back"
+            android:id="@+id/rv_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:background="@color/white_back"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/lin_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

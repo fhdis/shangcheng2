@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+        android:drawableLeft="@mipmap/icon_un_read"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:text="@string/information"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_text_size_middle" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tv_info_detail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|right"
+        android:maxLines="1"
+        android:paddingRight="20dp"
+        android:text="2018-01-01 12:33"
+        android:textSize="@dimen/dimen_text_size_middle" />
+
+    <View
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_time"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+    <TextView
+        android:id="@+id/tv_info_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info"
+        android:clickable="false"
+        android:gravity="center_vertical|left"
+        android:padding="@dimen/dp_18"
+        android:text="尊敬的用户，你好，本平台于4月5日进行维护，新版本更新。"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_text_size_middle" />
+
+    <View
+        android:id="@+id/iv_line2"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/tv_info_detail"
+        android:background="@color/item_info_bottom_divider" />
+    <!-- <TextView
+         android:id="@+id/tv_info_detail"
+         android:layout_below="@id/tv_info"
+         android:layout_width="match_parent"
+         android:paddingLeft="10dp"
+         android:gravity="center_vertical"
+         android:layout_height="45dp"
+         android:textSize="@dimen/dimen_text_size_small"
+         tools:text="尊敬的用户，你好，本平台于4月5日进行维护，新版本更新。"
+         android:maxLines="2"/>-->
+</RelativeLayout>
+

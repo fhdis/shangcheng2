@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="@dimen/dimen_toolbar_height"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="-5dp"
+                android:background="@mipmap/backgound">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_user_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/icon_photo" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/civ_user_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="1"
+                    android:text="我是一个小桃子"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_user_yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/tv_user_name"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="1dp"
+                    android:maxLines="1"
+                    android:text="余额100元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_toolbar_height_change"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <ImageView
+                    android:id="@+id/iv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_toolbar_height"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/icon_info" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/layout_person" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

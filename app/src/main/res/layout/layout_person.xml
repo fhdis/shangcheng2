@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_interest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_all_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:drawableTop="@mipmap/icon_all_order"
+                android:gravity="center"
+                android:text="全部订单"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_text_size_tiny" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.001dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_benefit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/tv_nopay_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:drawableTop="@mipmap/icon_pending_payment"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_text_size_tiny" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.001dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_points"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_complet_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:drawableTop="@mipmap/icon_processing"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_text_size_tiny" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/lightgray" />
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/bind_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="微信绑定"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/zhifusetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="支付密码设置"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/loginpasswordsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="登录密码设置"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/tv_address_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="地址管理"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/tv_recharge_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="充值管理"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/customer_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="用户反馈"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="关于食纷生活"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+    <ruilelin.com.shifenlife.person.view.ClickableListItem
+        android:id="@+id/tv_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app1:containIcon="false"
+        app1:text="退出登录"
+        app1:textColor="@color/gray"
+        app1:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/lightgray" />
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="str_merchandise_time">下单时间:%s</string>
+    <string name="str_merchandise_price">共<b>%1$s</b>件商品 合计:<b>¥%2$s</b></string>
+    <string name="string_yue_pay">余额</string>
+    <string name="information">通知</string>
+    <string name="app_name">食纷生活</string>
+    <string name="name">Name:%1$s</string>
+    <string name="age">Age:%1$d</string>
+    <string name="cart">购物车</string>
+    <string name="cart_clear">清空全部</string>
+    <string name="back">返回</string>
+    <string name="string_confirm_pay">立即充值</string>
+    <string name="string_wechat_pay">微信</string>
+    <string name="string_ali_pay">支付宝</string>
+    <string name="string_add_place">新增地址</string>
+    <string name="string_concrete_place">用户详细地址</string>
+    <string name="string_contract">联 系 人:</string>
+    <string name="string_name">请填写联系人姓名</string>
+    <string name="string_user_sex">性别</string>
+    <string name="string_male">先生</string>
+    <string name="string_female">女士</string>
+    <string name="string_phone">手 机 号:</string>
+    <string name="string_phone_number">请填写收货手机号码</string>
+    <string name="string_place">收货地址:</string>
+    <string name="map_address">点击选择</string>
+    <string name="string_place_number">例 16号楼5层301室</string>
+    <string name="string_confirm">保存地址</string>
+    <string name="string_address">收货地址:</string>
+    <string name="string_address_detail">门 牌  号:</string>
+    <string name="string_delete">删除</string>
+    <string name="share">分享</string>
+    <string name="share_title">分享到</string>
+    <string name="moments">朋友圈</string>
+    <string name="wechat">微信好友</string>
+    <string name="weibo">新浪微博</string>
+    <string name="qq">QQ</string>
+    <string name="qzone">QQ空间</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+</resources>

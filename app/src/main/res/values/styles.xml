@@ -1,0 +1,147 @@
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/whitesmoke</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainButtonStyle">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <!--   <item name="android:drawablePadding">3dp</item>-->
+        <item name="android:textColor">@drawable/bottom_button_text_selector</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--  popuamin代码 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!--圆角的dialog样式-->
+    <style name="RoundCornerDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+    </declare-styleable>
+
+    <style name="CustomMatisseTheme" parent="Matisse.Zhihu">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="toolbar">@style/Toolbar.Zhihu</item>
+        <item name="album.title.color">@color/zhihu_album_title_text</item>
+        <item name="album.count.color">@color/zhihu_album_count_text</item>
+        <item name="album.selected">@android:color/white</item>
+        <item name="album.placeholder">@color/zhihu_album_placeholder</item>
+        <item name="album.emptyView">@drawable/ic_empty_zhihu</item>
+        <item name="album.emptyView.color">@color/zhihu_empty_view</item>
+        <item name="item.placeholder">@color/zhihu_item_placeholder</item>
+        <item name="page.bg">@color/zhihu_page_bg</item>
+        <item name="bottomToolbar.bg">@color/zhihu_bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.color">@color/zhihu_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.color">@color/colorPrimary</item>
+        <item name="listPopupWindowStyle">@style/Popup.Zhihu</item>
+        <item name="capture.color">@color/zhihu_capture</item>
+    </style>
+
+    <style name="line">
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <style name="line_vertical" parent="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="RadioButtonNew">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="TabIndicator" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dp</item>
+    </style>
+
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    /**
+    微信登录
+    */
+
+    <style name="wx_login_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item><!--退出动画-->
+        <item name="android:activityOpenExitAnimation">@anim/activity_close_exit</item>
+        <!--<item name="android:background">@color/color_transparent_9000</item>-->
+    </style>
+
+
+    <!--输入原密码EditText下划线-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/lightgray</item>
+        <item name="colorControlActivated">@color/lightgray</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

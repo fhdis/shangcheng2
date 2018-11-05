@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/toparrow_leftwhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <TextView
+            android:layout_marginLeft="-50dp"
+            android:id="@+id/tv_welcome"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:text="欢迎来到食纷生活!"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:background="@drawable/maincontentbox"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_corner_gray_bg"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:id="@+id/userIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ershoujihao" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/userIcon"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入电话号码"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_corner_gray_bg"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:id="@+id/passwordicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ershurumima" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/passwordicon"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/chbAgree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="阅读并同意《食纷生活平台服务协议》"
+                android:checked="false"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/round_corner_yellow_fill"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_yanzhengma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="手机验证码登录 |"
+                    />
+
+                <TextView
+                    android:layout_toRightOf="@id/tv_yanzhengma"
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="注册账号 |"
+                    />
+
+                <TextView
+                    android:id="@+id/forget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/register"
+                    android:layout_marginLeft="5dp"
+                    android:text="忘记密码"
+                     />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/c"
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—第三方授权登录—"/>
+    <TextView
+        android:id="@+id/tv_weixin"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_wx_logo"/>
+</RelativeLayout>

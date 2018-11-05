@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+    <!--titlebar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include
+        android:id="@+id/search_bar"
+        layout="@layout/search_bar"/>
+
+    <com.zhouwei.mzbanner.MZBannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        app:canLoop="false"
+        app:open_mz_mode="false"
+        app:indicatorAlign="center"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyc_channel"
+        android:layout_width="match_parent"
+        android:scrollbars="horizontal"
+        android:scrollbarStyle="insideOverlay"
+        android:layout_height="180dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:background="@color/yellow_main">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/home_recmend_title"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"/>
+        <include
+            android:id="@+id/recommend_layout"
+            layout="@layout/recommend_layout"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="附近店铺"
+            android:textColor="#000"
+            android:layout_gravity="left"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyc_nearby"
+            android:layout_width="match_parent"
+            android:scrollbars="horizontal"
+            android:scrollbarStyle="insideOverlay"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
